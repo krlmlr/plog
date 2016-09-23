@@ -19,6 +19,5 @@ before_build:
 - cmd: echo %PATH%
 - cmd: cmake -Hsamples -Bbuild -G"%CMAKE_GENERATOR%"
 
-build:
-  project: build\Samples.sln
-  verbosity: minimal
+build_script:
+  - make -C samples
