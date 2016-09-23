@@ -4,7 +4,7 @@ configuration:
 
 environment:
   matrix:
-    - CMAKE_GENERATOR: "MinGW Makefiles"
+    - CMAKE_GENERATOR: "MSYS Makefiles"
 
 matrix:
   fast_finish: true
