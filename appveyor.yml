@@ -13,7 +13,8 @@ shallow_clone: true
 
 before_build:
 - cmd: echo %PATH%
-- cmd: set PATH=%PATH:C:\Program Files\Git\bin;=%
+- cmd: set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
+- cmd: set PATH=%PATH:C:\Program Files\Git\cmd;=%
 - cmd: set PATH=C:\MinGW\bin;%PATH%
 - cmd: echo %PATH%
 - cmd: cmake -Hsamples -Bbuild -G"%CMAKE_GENERATOR%"
