@@ -12,6 +12,7 @@ matrix:
 shallow_clone: true
 
 before_build:
+- cmd: echo %PATH%
 - cmd: cmake -Hsamples -Bbuild -G"%CMAKE_GENERATOR%"
 
 build:
